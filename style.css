@@ -1,3 +1,10 @@
+:root {
+  --morado-principal: #a100c2;
+  --morado-secundario: #4d1363;
+  --negro-transparente: #000000c4;
+
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -41,7 +48,7 @@ section {
 
 
 body {
-  background-image: url(imagenes/fondo.japon3.png);
+  background-image: url(imagenes/fondo-neon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -55,18 +62,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: radial-gradient(circle, #a100c2, #4d1363);
+  background: radial-gradient(circle, var(--morado-principal), var(--morado-secundario));
   padding: 10px 20px;
   color: white;
 }
 
 .titulo {
   text-align: center;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+
 
 .navegador {
   color: white;
-  background-color: #9502cf;
+  background-color: var(--morado-principal);
   border-radius: 10px;
   padding: 10px;
   margin: 0px 15px;
@@ -98,7 +110,7 @@ body {
 }
 
 .caja-texto{
-  background-color: rgba(0, 0, 0, 0.651);
+  background-color: var(--negro-transparente);
   padding: 15px;
   border-radius: 10px;
   max-width: 1000px;
@@ -118,19 +130,20 @@ body {
 }
 
 .habilidad {
-  background-color: rgba(0, 0, 0, 0.651);
+  background-color: rgba(0, 0, 0, 0.774);
   color: white;
   text-align: center;
   border-radius: 10px;
   padding: 20px;
   width: 40%;
   max-width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   
 }
 
 .habilidad:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 25px rgba(149, 2, 207, 0.5);
+  box-shadow: 0 0 25px var(--morado-principal);
 }
 
 .habilidad img {
@@ -140,7 +153,7 @@ body {
 }
 
 .proyecto {
-  background-color: rgba(0, 0, 0, 0.651);
+  background-color: var(--negro-transparente);
   padding: 15px;
   border-radius: 10px;
   max-width: 1000px;
@@ -159,7 +172,7 @@ body {
 }
 
 .contacto-item {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--negro-transparente);
   text-align: center;
   color: white;
   border-radius: 10px;
@@ -178,7 +191,7 @@ body {
 
 .contacto-item a {
   display: inline-block;
-  background-color: #9502cf;
+  background-color: var(--morado-principal);
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -189,7 +202,7 @@ body {
 
 .boton {
       color: white;
-  background-color: #9502cf;
+  background-color: var(--morado-principal);
   border-radius: 10px;
   padding: 10px;
   margin: 20px;
@@ -221,9 +234,22 @@ body {
   align-items: center;
   border-radius: 50%; 
   text-decoration: none; 
-  background-color: #9502cf;
+  background-color: var(--morado-principal);
   margin: px;
 }
+
+
+.formulario {
+  background-color: var(--negro-transparente);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  display: block;
+}
+
 
 
 
@@ -249,19 +275,19 @@ footer {
 }
 
 .proyecto {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: var(--negro-transparente);
   color: white;
   border-radius: 15px;
   overflow: hidden;
   max-width: 1000px;
   width: 90%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px var(--negro-transparente);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .proyecto:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 25px rgba(149, 2, 207, 0.5);
+  box-shadow: 0 0 25px var(--morado-principal);
 }
 
 .proyecto img {
@@ -276,7 +302,7 @@ footer {
 }
 
 .info-proyecto h3 {
-  color: #bb5fff;
+  color: var(--morado-principal);
   margin-bottom: 10px;
 }
 
@@ -292,7 +318,7 @@ footer {
 }
 
 .botones-proyecto a {
-  background-color: #9502cf;
+  background-color: var(--morado-principal);
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -302,7 +328,7 @@ footer {
 }
 
 .botones-proyecto a:hover {
-  background-color: #b347e6;
+  background-color: var(--morado-secundario);
 }
 
 
