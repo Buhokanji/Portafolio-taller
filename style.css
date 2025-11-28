@@ -474,6 +474,7 @@ footer {
     z-index: 998;
 }
 .menu-checkbox:checked ~ .navegador {
-    max-height: 500px;   
-    padding: 1rem 0;
-}
+    max-height: 240px;   
+    padding: 0.3 rem 0;
+}}
+
